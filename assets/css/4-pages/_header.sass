@@ -1,0 +1,93 @@
+header
+	height: 450px
+	font-family: 'Source Code Pro', monospace
+	//background: url(../img/hero-background.jpg) center center url("https://i.vimeocdn.com/video/629977228.webp?mw=1800&mh=1013&q=70") 	
+	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5))
+	background-size: cover
+	position: relative
+	overflow: hidden 
+	background-color: $text-bg-color
+
+	video 
+		width: 2000px
+		position: absolute
+		top: 50%
+		transform: translate(-50%,-50%)
+		z-index: -1
+		left: 50% 
+
+
+
+
+	.logo
+		height: 50px
+		width: 175px
+		float: left
+		margin: 50px 30px 30px 50px
+		path
+			fill: $text-color
+
+	nav 
+		float: right
+		margin: 30px 30px 0 0 
+		z-index: 100
+		position: relative
+
+		a
+			position: relative
+			//background-color: $text-bg-color
+			text-decoration: none
+			display: inline-block
+			margin-left: 20px
+			font-weight: 700
+			text-transform: uppercase
+			color: $text-color
+
+			&:hover
+				color: $link-hover
+
+			&:before 
+			    content: ''
+			    background: $text-bg-color
+			    position: absolute
+			    top: 0
+			    bottom: 0
+			    left: 50%
+			    width: 0%
+			    transition: all 0.3s ease-out
+			    z-index: -1
+			&:hover:before 
+			    width: 100%
+			    left: 0
+
+
+
+
+	h1
+		text-align: center
+		text-transform: lowercase
+		font: 
+			size: 60px
+			weight: 800
+		color: $text-color
+		letter-spacing: .05em
+		margin-bottom: 20px
+		clear: both
+		padding-top: 10px
+
+		span
+			display: inline-block 
+			padding: .5em .2em
+			border: white solid 10px
+
+
+	.kicker
+		text-align:	center
+		color: $text-color
+		font:
+			weight: 800
+		text-transform: lowercase
+		span
+			background-color: $text-bg-color		
+
+
